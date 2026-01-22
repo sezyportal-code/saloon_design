@@ -1,0 +1,2416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfect Hair Salon | Premium Grooming in Gulshan-e-Iqbal, Karachi</title>
+  <meta name="description" content="Experience premium grooming at Perfect Hair Salon, Karachi's most trusted barbershop since 2014. Expert haircuts, beard grooming, and styling. Book now!">
+  <meta name="author" content="Perfect Hair Salon">
+  <meta name="keywords" content="barber, salon, haircut, beard grooming, Karachi, Gulshan-e-Iqbal, hair styling, men grooming">
+  <meta property="og:title" content="Perfect Hair Salon | Premium Grooming in Karachi">
+  <meta property="og:description" content="Karachi's most trusted barbershop since 2014. Expert haircuts, beard grooming, and styling.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://perfecthairsalon.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Perfect Hair Salon",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop #15, Block 10-A",
+      "addressLocality": "Gulshan-e-Iqbal",
+      "addressRegion": "Karachi",
+      "addressCountry": "PK"
+    },
+    "telephone": "+923252530524",
+    "openingHours": "Mo-Su 10:00-22:00",
+    "priceRange": "Rs. 200 - Rs. 3500",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "55"
+    }
+  }
+  </script>
+
+  <style>
+    /* ========== CSS RESET & BASE ========== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    :root {
+      --bg: #0d0a09;
+      --bg-secondary: #171312;
+      --card: #1a1614;
+      --foreground: #faf8f7;
+      --muted: #a19490;
+      --primary: #c9a227;
+      --primary-light: #dbb84a;
+      --primary-dark: #9e7c1b;
+      --border: #3d3530;
+      --radius: 0.75rem;
+      --font-display: 'Playfair Display', serif;
+      --font-sans: 'Inter', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--foreground);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); font-weight: 700; line-height: 1.2; }
+    
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+    button { font-family: inherit; cursor: pointer; border: none; }
+    
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ========== UTILITY CLASSES ========== */
+    .gold-gradient {
+      background: linear-gradient(135deg, #c9a227 0%, #dbb84a 50%, #c9a227 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.875rem 2rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--bg);
+    }
+    .btn-primary:hover { background: var(--primary-light); transform: translateY(-2px); box-shadow: 0 10px 40px rgba(201, 162, 39, 0.3); }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid rgba(201, 162, 39, 0.5);
+      color: var(--foreground);
+    }
+    .btn-outline:hover { background: rgba(201, 162, 39, 0.1); border-color: var(--primary); }
+
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(201, 162, 39, 0.1);
+      border: 1px solid rgba(201, 162, 39, 0.3);
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+      font-size: 1.125rem;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .premium-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: all 0.5s ease;
+    }
+    .premium-card:hover { border-color: rgba(201, 162, 39, 0.5); box-shadow: 0 0 40px rgba(201, 162, 39, 0.1); }
+
+    /* ========== ANIMATIONS ========== */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes slideInLeft {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes slideInRight {
+      from { opacity: 0; transform: translateX(50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes rotateIn {
+      from { opacity: 0; transform: rotate(-10deg) scale(0.9); }
+      to { opacity: 1; transform: rotate(0) scale(1); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 20px rgba(201, 162, 39, 0.3); }
+      50% { box-shadow: 0 0 40px rgba(201, 162, 39, 0.6); }
+    }
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes scrollIndicator {
+      0%, 100% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(10px); opacity: 0.5; }
+    }
+
+    .animate-on-scroll {
+      opacity: 0;
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .animate-on-scroll.visible { opacity: 1; }
+    .animate-on-scroll.fade-up { transform: translateY(40px); }
+    .animate-on-scroll.fade-up.visible { transform: translateY(0); }
+    .animate-on-scroll.fade-left { transform: translateX(-50px); }
+    .animate-on-scroll.fade-left.visible { transform: translateX(0); }
+    .animate-on-scroll.fade-right { transform: translateX(50px); }
+    .animate-on-scroll.fade-right.visible { transform: translateX(0); }
+    .animate-on-scroll.scale-in { transform: scale(0.9); }
+    .animate-on-scroll.scale-in.visible { transform: scale(1); }
+    .animate-on-scroll.rotate-in { transform: rotate(-10deg) scale(0.9); }
+    .animate-on-scroll.rotate-in.visible { transform: rotate(0) scale(1); }
+
+    .pulse-glow { animation: pulseGlow 2s ease-in-out infinite; }
+    .shimmer {
+      background: linear-gradient(110deg, transparent 25%, rgba(201, 162, 39, 0.1) 50%, transparent 75%);
+      background-size: 200% 100%;
+      animation: shimmer 3s infinite;
+    }
+
+    /* ========== TOP INFO BAR ========== */
+    .top-bar {
+      background: rgba(201, 162, 39, 0.05);
+      border-bottom: 1px solid rgba(201, 162, 39, 0.1);
+      padding: 0.625rem 0;
+      font-size: 0.875rem;
+    }
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .top-bar-left, .top-bar-right { display: flex; align-items: center; gap: 1.5rem; }
+    .top-bar-item { display: flex; align-items: center; gap: 0.5rem; color: var(--muted); }
+    .top-bar-item svg { color: var(--primary); width: 16px; height: 16px; }
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.75rem;
+      background: rgba(201, 162, 39, 0.1);
+      border: 1px solid rgba(201, 162, 39, 0.3);
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      color: var(--primary);
+      font-weight: 500;
+    }
+    .top-bar a:hover { color: var(--primary); }
+
+    @media (max-width: 768px) {
+      .top-bar { display: none; }
+    }
+
+    /* ========== NAVBAR ========== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 1rem 0;
+      transition: all 0.5s ease;
+    }
+    .navbar.scrolled {
+      background: rgba(13, 10, 9, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(201, 162, 39, 0.2);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .logo-icon::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border: 1px solid rgba(201, 162, 39, 0.3);
+      border-radius: 50%;
+      animation: pulseGlow 2s ease-in-out infinite;
+    }
+    .logo-icon svg { color: var(--bg); width: 24px; height: 24px; }
+    .logo-text h1 { font-size: 1.25rem; font-weight: 700; }
+    .logo-text p { font-size: 0.625rem; color: var(--primary); text-transform: uppercase; letter-spacing: 0.2em; }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-weight: 500;
+      color: rgba(250, 248, 247, 0.8);
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary), rgba(201, 162, 39, 0.5));
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-cta { display: flex; gap: 1rem; }
+    .nav-cta .btn { padding: 0.625rem 1.25rem; font-size: 0.875rem; }
+
+    .mobile-toggle {
+      display: none;
+      background: none;
+      color: var(--foreground);
+      padding: 0.5rem;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background: rgba(13, 10, 9, 0.98);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(201, 162, 39, 0.2);
+      padding: 1.5rem;
+    }
+    .mobile-menu.active { display: block; }
+    .mobile-menu a {
+      display: block;
+      padding: 0.75rem 0;
+      font-size: 1.125rem;
+      color: rgba(250, 248, 247, 0.8);
+      border-bottom: 1px solid var(--border);
+    }
+    .mobile-menu a:hover { color: var(--primary); }
+    .mobile-menu .btn { width: 100%; margin-top: 1rem; }
+
+    @media (max-width: 1024px) {
+      .nav-links, .nav-cta { display: none; }
+      .mobile-toggle { display: block; }
+    }
+
+    /* ========== HERO SECTION ========== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding: 6rem 0;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #1a1614 0%, #0d0a09 50%, #171312 100%);
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse at 30% 30%, rgba(201, 162, 39, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 70%, rgba(201, 162, 39, 0.05) 0%, transparent 50%);
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(13, 10, 9, 0.3) 0%, transparent 30%, transparent 70%, rgba(13, 10, 9, 0.8) 100%);
+    }
+
+    .hero-lines {
+      position: absolute;
+      inset: 0;
+      opacity: 0.1;
+      pointer-events: none;
+    }
+    .hero-lines::before, .hero-lines::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent 0%, var(--primary) 50%, transparent 100%);
+    }
+    .hero-lines::before { left: 25%; }
+    .hero-lines::after { right: 25%; }
+
+    .hero-blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      pointer-events: none;
+    }
+    .hero-blob-1 {
+      top: 20%;
+      left: 20%;
+      width: 500px;
+      height: 500px;
+      background: rgba(201, 162, 39, 0.08);
+      animation: float 12s ease-in-out infinite;
+    }
+    .hero-blob-2 {
+      bottom: 20%;
+      right: 20%;
+      width: 400px;
+      height: 400px;
+      background: rgba(201, 162, 39, 0.05);
+      animation: float 15s ease-in-out infinite reverse;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .hero-badge {
+      animation: fadeUp 0.8s ease-out forwards;
+    }
+    .hero-title {
+      font-size: clamp(3rem, 8vw, 6rem);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.8s 0.2s ease-out forwards;
+      opacity: 0;
+    }
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 2.5rem;
+      animation: fadeUp 0.8s 0.4s ease-out forwards;
+      opacity: 0;
+    }
+    .hero-subtitle .price-hint {
+      display: block;
+      margin-top: 0.5rem;
+      color: rgba(201, 162, 39, 0.8);
+    }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 4rem;
+      animation: fadeUp 0.8s 0.6s ease-out forwards;
+      opacity: 0;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      animation: fadeUp 0.8s 0.8s ease-out forwards;
+      opacity: 0;
+    }
+    .stat-item { text-align: center; }
+    .stat-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(201, 162, 39, 0.1);
+      border: 1px solid rgba(201, 162, 39, 0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 0.75rem;
+    }
+    .stat-icon svg { color: var(--primary); width: 24px; height: 24px; }
+    .stat-value { font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; }
+    .stat-label { font-size: 0.875rem; color: var(--muted); margin-top: 0.25rem; }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: fadeIn 1s 1.5s ease-out forwards;
+      opacity: 0;
+    }
+    .scroll-indicator-inner {
+      width: 24px;
+      height: 40px;
+      border: 2px solid rgba(201, 162, 39, 0.5);
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      padding-top: 8px;
+    }
+    .scroll-indicator-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--primary);
+      border-radius: 50%;
+      animation: scrollIndicator 2s infinite;
+    }
+
+    /* ========== ABOUT SECTION ========== */
+    .about {
+      padding: 6rem 0;
+      position: relative;
+    }
+    .about::before, .about::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201, 162, 39, 0.3), transparent);
+    }
+    .about::before { top: 0; }
+    .about::after { bottom: 0; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .about-image {
+      position: relative;
+    }
+    .about-image-main {
+      aspect-ratio: 4/5;
+      background: linear-gradient(135deg, var(--card) 0%, var(--bg-secondary) 100%);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem;
+    }
+    .about-image-main svg { color: var(--primary); width: 96px; height: 96px; margin-bottom: 1.5rem; }
+    .about-image-main h3 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .about-image-main p { color: var(--muted); }
+
+    .about-badge {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.5rem;
+      background: var(--primary);
+      color: var(--bg);
+      padding: 1rem 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+    .about-badge-value { font-family: var(--font-display); font-size: 2rem; font-weight: 700; }
+    .about-badge-label { font-size: 0.875rem; opacity: 0.9; }
+
+    .about-corner-tl, .about-corner-br {
+      position: absolute;
+      width: 96px;
+      height: 96px;
+    }
+    .about-corner-tl {
+      top: -1rem;
+      left: -1rem;
+      border-left: 2px solid rgba(201, 162, 39, 0.5);
+      border-top: 2px solid rgba(201, 162, 39, 0.5);
+      border-top-left-radius: 1.5rem;
+    }
+    .about-corner-br {
+      bottom: -1rem;
+      right: -1rem;
+      border-right: 2px solid rgba(201, 162, 39, 0.5);
+      border-bottom: 2px solid rgba(201, 162, 39, 0.5);
+      border-bottom-right-radius: 1.5rem;
+    }
+
+    .about-content h2 { margin-bottom: 1.5rem; }
+    .about-text {
+      color: var(--muted);
+      font-size: 1.125rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .about-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+    .about-feature-icon {
+      width: 24px;
+      height: 24px;
+      background: rgba(201, 162, 39, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .about-feature-icon svg { color: var(--primary); width: 14px; height: 14px; }
+    .about-feature span { color: var(--muted); font-size: 0.9375rem; }
+
+    .about-signature {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+    .about-signature-avatar {
+      width: 64px;
+      height: 64px;
+      background: rgba(201, 162, 39, 0.2);
+      border: 2px solid var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .about-signature-name { font-family: var(--font-display); font-weight: 600; font-size: 1.125rem; }
+    .about-signature-role { font-size: 0.875rem; color: var(--muted); }
+
+    @media (max-width: 768px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .about-features { grid-template-columns: 1fr; }
+    }
+
+    /* ========== SERVICES SECTION ========== */
+    .services {
+      padding: 6rem 0;
+      background: var(--bg-secondary);
+      position: relative;
+    }
+    .services-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .service-card {
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card.popular::before {
+      content: 'Popular';
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--primary);
+      color: var(--bg);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+    }
+    .service-icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(201, 162, 39, 0.1);
+      border: 1px solid rgba(201, 162, 39, 0.3);
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      transition: transform 0.5s ease;
+    }
+    .service-card:hover .service-icon { transform: rotate(-10deg); }
+    .service-icon svg { color: var(--primary); width: 32px; height: 32px; }
+    .service-card h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+    .service-card p { color: var(--muted); margin-bottom: 1.5rem; line-height: 1.6; }
+    .service-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .service-price { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; }
+    .service-book {
+      color: var(--primary);
+      font-size: 0.875rem;
+      font-weight: 600;
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover .service-book { transform: translateX(5px); }
+    .services-note {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.875rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 1024px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .services-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ========== TEAM SECTION ========== */
+    .team {
+      padding: 6rem 0;
+      position: relative;
+    }
+    .team::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201, 162, 39, 0.3), transparent);
+    }
+    .team-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1.5rem;
+    }
+    .team-member {
+      text-align: center;
+      cursor: pointer;
+    }
+    .team-member-image {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+    .team-member-photo {
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 4px solid var(--card);
+      overflow: hidden;
+      transition: all 0.5s ease;
+      background: linear-gradient(135deg, var(--card) 0%, var(--bg-secondary) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .team-member-photo svg { color: var(--primary); width: 48px; height: 48px; }
+    .team-member:hover .team-member-photo {
+      border-color: rgba(201, 162, 39, 0.5);
+      transform: scale(1.05);
+    }
+    .team-member-glow {
+      position: absolute;
+      inset: -8px;
+      border-radius: 50%;
+      background: rgba(201, 162, 39, 0.2);
+      filter: blur(20px);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: -1;
+    }
+    .team-member:hover .team-member-glow { opacity: 1; }
+    .team-member-role-badge {
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary);
+      color: var(--bg);
+      font-size: 0.625rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      white-space: nowrap;
+    }
+    .team-member-name { font-family: var(--font-display); font-weight: 600; margin-bottom: 0.25rem; }
+    .team-member-role { font-size: 0.75rem; color: var(--muted); }
+    .team-member-details {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      margin-top: 0.5rem;
+    }
+    .team-member:hover .team-member-details {
+      opacity: 1;
+      max-height: 60px;
+    }
+    .team-member-details span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      font-size: 0.75rem;
+      color: var(--primary);
+    }
+    .team-member-details span svg { width: 12px; height: 12px; }
+
+    @media (max-width: 1024px) {
+      .team-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ========== WHY CHOOSE SECTION ========== */
+    .why-choose {
+      padding: 6rem 0;
+      background: var(--bg-secondary);
+      position: relative;
+    }
+    .why-choose::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 2px 2px, rgba(201, 162, 39, 0.1) 1px, transparent 0);
+      background-size: 40px 40px;
+      opacity: 0.5;
+    }
+    .why-choose .container { position: relative; z-index: 1; }
+    .why-choose-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .why-choose-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .why-card {
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+    .why-card-icon {
+      width: 80px;
+      height: 80px;
+      background: rgba(201, 162, 39, 0.1);
+      border: 1px solid rgba(201, 162, 39, 0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      transition: all 0.8s ease;
+    }
+    .why-card:hover .why-card-icon {
+      background: rgba(201, 162, 39, 0.2);
+      transform: rotate(360deg);
+    }
+    .why-card-icon svg { color: var(--primary); width: 40px; height: 40px; }
+    .why-card h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+    .why-card p { color: var(--muted); }
+    .why-card-corner-tl, .why-card-corner-br {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .why-card:hover .why-card-corner-tl, .why-card:hover .why-card-corner-br { opacity: 1; }
+    .why-card-corner-tl {
+      top: 1rem;
+      right: 1rem;
+      border-top: 1px solid rgba(201, 162, 39, 0.3);
+      border-right: 1px solid rgba(201, 162, 39, 0.3);
+      border-top-right-radius: 0.5rem;
+    }
+    .why-card-corner-br {
+      bottom: 1rem;
+      left: 1rem;
+      border-bottom: 1px solid rgba(201, 162, 39, 0.3);
+      border-left: 1px solid rgba(201, 162, 39, 0.3);
+      border-bottom-left-radius: 0.5rem;
+    }
+
+    @media (max-width: 1024px) {
+      .why-choose-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .why-choose-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ========== REVIEWS SECTION ========== */
+    .reviews {
+      padding: 6rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .reviews::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 800px;
+      background: rgba(201, 162, 39, 0.03);
+      border-radius: 50%;
+      filter: blur(100px);
+    }
+    .reviews .container { position: relative; z-index: 1; }
+    .reviews-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .reviews-carousel {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .review-card {
+      padding: 3rem;
+      text-align: center;
+      position: relative;
+    }
+    .review-quote {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 64px;
+      height: 64px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .review-quote svg { color: var(--bg); width: 32px; height: 32px; }
+    .review-stars {
+      display: flex;
+      justify-content: center;
+      gap: 0.25rem;
+      margin: 1.5rem 0;
+    }
+    .review-stars svg { color: var(--primary); width: 24px; height: 24px; fill: var(--primary); }
+    .review-text {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .review-author { font-weight: 600; }
+    .review-date { font-size: 0.875rem; color: var(--muted); margin-top: 0.25rem; }
+
+    .reviews-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .reviews-nav-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: transparent;
+      border: 1px solid rgba(201, 162, 39, 0.5);
+      color: var(--foreground);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .reviews-nav-btn:hover { background: rgba(201, 162, 39, 0.1); }
+    .reviews-nav-btn svg { width: 20px; height: 20px; }
+    .reviews-dots {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .reviews-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 9999px;
+      background: rgba(201, 162, 39, 0.3);
+      border: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .reviews-dot.active {
+      width: 32px;
+      background: var(--primary);
+    }
+
+    .reviews-google {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .reviews-google a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      transition: all 0.3s ease;
+    }
+    .reviews-google a:hover { border-color: rgba(201, 162, 39, 0.5); }
+    .reviews-google-stars { display: flex; gap: 0.125rem; }
+    .reviews-google-stars svg { color: var(--primary); fill: var(--primary); width: 16px; height: 16px; }
+    .reviews-google-text { font-size: 0.875rem; color: var(--muted); }
+    .reviews-google-text span { color: var(--primary); }
+
+    /* ========== BOOKING SECTION ========== */
+    .booking {
+      padding: 6rem 0;
+      background: var(--bg-secondary);
+      position: relative;
+    }
+    .booking::before, .booking::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent 0%, rgba(201, 162, 39, 0.2) 50%, transparent 100%);
+      opacity: 0.5;
+    }
+    .booking::before { left: 25%; }
+    .booking::after { right: 25%; }
+    .booking .container { position: relative; z-index: 1; }
+    .booking-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .booking-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .booking-progress {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    .booking-step {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.125rem;
+      color: var(--muted);
+      transition: all 0.5s ease;
+    }
+    .booking-step.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: var(--bg);
+      transform: scale(1.1);
+    }
+    .booking-step.completed {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: var(--bg);
+    }
+    .booking-step svg { width: 24px; height: 24px; }
+    .booking-line {
+      width: 64px;
+      height: 4px;
+      background: var(--border);
+      border-radius: 2px;
+      transition: background 0.5s ease;
+    }
+    .booking-line.active { background: var(--primary); }
+
+    .booking-card { padding: 2rem; }
+    .booking-step-content {
+      display: none;
+    }
+    .booking-step-content.active { display: block; animation: fadeIn 0.5s ease; }
+    .booking-step-title {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .booking-step-title svg { color: var(--primary); width: 24px; height: 24px; }
+
+    .booking-options {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .booking-option {
+      padding: 1rem;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      text-align: left;
+      font-weight: 500;
+      color: var(--foreground);
+      transition: all 0.3s ease;
+    }
+    .booking-option:hover { border-color: rgba(201, 162, 39, 0.5); }
+    .booking-option.selected {
+      border-color: var(--primary);
+      background: rgba(201, 162, 39, 0.1);
+    }
+
+    .booking-time-options {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+    }
+    .booking-time {
+      padding: 0.75rem;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      text-align: center;
+      font-weight: 500;
+      color: var(--foreground);
+      transition: all 0.3s ease;
+    }
+    .booking-time:hover { border-color: rgba(201, 162, 39, 0.5); }
+    .booking-time.selected {
+      border-color: var(--primary);
+      background: rgba(201, 162, 39, 0.1);
+    }
+
+    .booking-summary {
+      background: rgba(13, 10, 9, 0.5);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .booking-summary-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .booking-summary-row + .booking-summary-row { margin-top: 1rem; }
+    .booking-summary-row svg { color: var(--primary); width: 20px; height: 20px; }
+    .booking-summary-label { font-size: 0.875rem; color: var(--muted); }
+    .booking-summary-value { font-weight: 600; }
+
+    .booking-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .booking-actions .btn { flex: 1; min-width: 200px; }
+
+    .booking-back {
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 0.875rem;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    .booking-back:hover { color: var(--foreground); }
+
+    @media (max-width: 768px) {
+      .booking-options { grid-template-columns: repeat(2, 1fr); }
+      .booking-time-options { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .booking-options { grid-template-columns: 1fr; }
+    }
+
+    /* ========== CONTACT SECTION ========== */
+    .contact {
+      padding: 6rem 0;
+      position: relative;
+    }
+    .contact::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg-secondary) 50%, var(--bg) 100%);
+    }
+    .contact .container { position: relative; z-index: 1; }
+    .contact-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    .contact-cards { display: flex; flex-direction: column; gap: 1.5rem; }
+    .contact-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+    .contact-card:hover { transform: translateX(10px); }
+    .contact-card-icon {
+      width: 56px;
+      height: 56px;
+      background: rgba(201, 162, 39, 0.1);
+      border: 1px solid rgba(201, 162, 39, 0.3);
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-card-icon svg { color: var(--primary); width: 28px; height: 28px; }
+    .contact-card h3 { font-family: var(--font-display); font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .contact-card p { color: var(--muted); margin-bottom: 0.5rem; }
+    .contact-card a { color: var(--primary); font-size: 0.875rem; }
+    .contact-card a:hover { text-decoration: underline; }
+
+    .contact-social { padding: 1.5rem; }
+    .contact-social h3 { font-family: var(--font-display); font-size: 1.125rem; font-weight: 600; margin-bottom: 1rem; }
+    .contact-social-links { display: flex; gap: 1rem; }
+    .contact-social-link {
+      width: 48px;
+      height: 48px;
+      background: rgba(201, 162, 39, 0.1);
+      border: 1px solid rgba(201, 162, 39, 0.3);
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .contact-social-link:hover {
+      background: var(--primary);
+      color: var(--bg);
+    }
+    .contact-social-link svg { width: 20px; height: 20px; }
+
+    .contact-map {
+      position: relative;
+    }
+    .contact-map-frame {
+      aspect-ratio: 4/3;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .contact-map-frame iframe {
+      width: 100%;
+      height: 100%;
+      filter: grayscale(1);
+      transition: filter 0.5s ease;
+    }
+    .contact-map-frame:hover iframe { filter: grayscale(0); }
+    .contact-map-cta {
+      position: absolute;
+      bottom: -1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 320px;
+    }
+    .contact-map-cta .btn { width: 100%; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5); }
+
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ========== FOOTER ========== */
+    .footer {
+      background: #0a0807;
+      border-top: 1px solid rgba(201, 162, 39, 0.2);
+      position: relative;
+    }
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, var(--primary), transparent);
+    }
+    .footer-main {
+      padding: 4rem 0;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 3rem;
+    }
+    .footer-brand .logo { margin-bottom: 1rem; }
+    .footer-brand p { color: var(--muted); line-height: 1.8; }
+    .footer-heading {
+      font-family: var(--font-display);
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 0.75rem; }
+    .footer-links a {
+      color: var(--muted);
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    .footer-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--primary);
+      transition: width 0.3s ease;
+    }
+    .footer-links a:hover { color: var(--primary); }
+    .footer-links a:hover::after { width: 100%; }
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .footer-contact-item svg { color: var(--primary); width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px; }
+    .footer-contact-item span { color: var(--muted); }
+    .footer-contact-item a { color: var(--muted); transition: color 0.3s ease; }
+    .footer-contact-item a:hover { color: var(--primary); }
+
+    .footer-bottom {
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .footer-bottom .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-bottom p { font-size: 0.875rem; color: var(--muted); }
+    .footer-bottom-right {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .footer-bottom-right svg { color: var(--primary); fill: var(--primary); width: 16px; height: 16px; }
+
+    @media (max-width: 1024px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom .container { justify-content: center; text-align: center; }
+    }
+
+    /* ========== PREFERS REDUCED MOTION ========== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- TOP INFO BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Mon-Sun: 10AM - 10PM</span>
+        </div>
+        <div class="top-bar-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Gulshan-e-Iqbal, Karachi</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="trust-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+          Since 2014 • 55+ Google Reviews
+        </div>
+        <a href="tel:+923252530524" class="top-bar-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +92 325 253 0524
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="logo">
+        <div class="logo-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+        </div>
+        <div class="logo-text">
+          <h1>Perfect Hair</h1>
+          <p>Salon</p>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="tel:+923252530524" class="btn btn-outline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Now
+        </a>
+        <a href="https://wa.me/923252530524?text=Hi!%20I'd%20like%20to%20book%20an%20appointment." target="_blank" class="btn btn-primary pulse-glow">
+          Book via WhatsApp
+        </a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="menuIcon"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="closeIcon" style="display:none"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+923252530524" class="btn btn-outline">Call Now</a>
+      <a href="https://wa.me/923252530524" target="_blank" class="btn btn-primary">Book via WhatsApp</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+    </div>
+    <div class="hero-lines"></div>
+
+    <div class="container hero-content">
+      <div class="section-badge hero-badge shimmer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+        Premium Grooming Since 2014
+      </div>
+
+      <h1 class="hero-title">
+        <span>Where Style</span><br>
+        <span class="gold-gradient">Meets Precision</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Experience the art of grooming at Karachi's most trusted barbershop.
+        <span class="price-hint">Affordable prices starting from Rs. 200</span>
+      </p>
+
+      <div class="hero-cta">
+        <a href="https://wa.me/923252530524?text=Hi!%20I'd%20like%20to%20book%20an%20appointment%20at%20Perfect%20Hair%20Salon." target="_blank" class="btn btn-primary pulse-glow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Book on WhatsApp
+        </a>
+        <a href="tel:+923252530524" class="btn btn-outline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Now
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="stat-value gold-gradient">5000+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="stat-value gold-gradient">4.9</div>
+          <div class="stat-label">Google Rating</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div class="stat-value gold-gradient">10+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-indicator-inner">
+        <div class="scroll-indicator-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image animate-on-scroll fade-left">
+          <div class="about-corner-tl"></div>
+          <div class="about-image-main">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            <h3 class="gold-gradient">10+ Years</h3>
+            <p>of Excellence</p>
+          </div>
+          <div class="about-badge">
+            <div class="about-badge-value">55+</div>
+            <div class="about-badge-label">Google Reviews</div>
+          </div>
+          <div class="about-corner-br"></div>
+        </div>
+
+        <div class="about-content animate-on-scroll fade-right">
+          <div class="section-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+            About Us
+          </div>
+
+          <h2 class="section-title">
+            Crafting <span class="gold-gradient">Confidence</span><br>Since 2014
+          </h2>
+
+          <p class="about-text">
+            At Perfect Hair Salon, we believe a great haircut is more than just style—it's confidence. Located in the heart of Gulshan-e-Iqbal, Karachi, we've been transforming looks and boosting confidence for over a decade.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Master barbers with 10+ years experience</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Premium grooming products only</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Relaxing ambiance & hospitality</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Affordable prices for everyone</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Hygienic & sanitized equipment</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Walk-ins welcome, appointments preferred</span>
+            </div>
+          </div>
+
+          <div class="about-signature">
+            <div class="about-signature-avatar">U</div>
+            <div>
+              <div class="about-signature-name">Usman Khan</div>
+              <div class="about-signature-role">Owner & Master Barber</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header animate-on-scroll fade-up">
+        <div class="section-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+          Our Services
+        </div>
+        <h2 class="section-title">Premium <span class="gold-gradient">Grooming Services</span></h2>
+        <p class="section-subtitle">From classic cuts to modern styling, we offer a full range of services to keep you looking sharp</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card premium-card popular animate-on-scroll fade-up" style="transition-delay: 0.1s">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+          </div>
+          <h3>Haircut & Styling</h3>
+          <p>Classic to modern cuts tailored to your face shape and style.</p>
+          <div class="service-footer">
+            <span class="service-price gold-gradient">Rs. 200-500</span>
+            <a href="#booking" class="service-book">Book Now →</a>
+          </div>
+        </div>
+
+        <div class="service-card premium-card animate-on-scroll fade-up" style="transition-delay: 0.2s">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 4 3 12h14l3-12"/><path d="m5 8 10 0"/><path d="M15 8 15 20"/></svg>
+          </div>
+          <h3>Beard Grooming</h3>
+          <p>Shaping, trimming & hot towel treatment for the perfect beard.</p>
+          <div class="service-footer">
+            <span class="service-price gold-gradient">Rs. 150-400</span>
+            <a href="#booking" class="service-book">Book Now →</a>
+          </div>
+        </div>
+
+        <div class="service-card premium-card animate-on-scroll fade-up" style="transition-delay: 0.3s">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5v14"/><path d="M21 12a2 2 0 1 1-4 0c0-1.6.8-4 4-8 3.2 4 4 6.4 4 8a2 2 0 1 1-4 0"/><path d="M7 5a6 6 0 0 0 6 6"/><path d="M7 5c2 4 5 6 7 7"/></svg>
+          </div>
+          <h3>Hair Coloring</h3>
+          <p>Professional coloring with premium, ammonia-free products.</p>
+          <div class="service-footer">
+            <span class="service-price gold-gradient">Rs. 800-2000</span>
+            <a href="#booking" class="service-book">Book Now →</a>
+          </div>
+        </div>
+
+        <div class="service-card premium-card popular animate-on-scroll fade-up" style="transition-delay: 0.4s">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+          </div>
+          <h3>Hair Treatment</h3>
+          <p>Keratin, protein & deep conditioning for healthy hair.</p>
+          <div class="service-footer">
+            <span class="service-price gold-gradient">Rs. 1000-3000</span>
+            <a href="#booking" class="service-book">Book Now →</a>
+          </div>
+        </div>
+
+        <div class="service-card premium-card animate-on-scroll fade-up" style="transition-delay: 0.5s">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+          </div>
+          <h3>Facial & Cleanup</h3>
+          <p>Refreshing facials for glowing, healthy skin.</p>
+          <div class="service-footer">
+            <span class="service-price gold-gradient">Rs. 500-1200</span>
+            <a href="#booking" class="service-book">Book Now →</a>
+          </div>
+        </div>
+
+        <div class="service-card premium-card animate-on-scroll fade-up" style="transition-delay: 0.6s">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"/></svg>
+          </div>
+          <h3>Hair Highlights</h3>
+          <p>Subtle to bold highlights that enhance your look.</p>
+          <div class="service-footer">
+            <span class="service-price gold-gradient">Rs. 1500-3500</span>
+            <a href="#booking" class="service-book">Book Now →</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="services-note">* Prices may vary based on hair length and complexity. Consultation available.</p>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="team-header animate-on-scroll fade-up">
+        <div class="section-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Expert Team
+        </div>
+        <h2 class="section-title">Meet Our <span class="gold-gradient">Skilled Barbers</span></h2>
+        <p class="section-subtitle">A team of passionate professionals with decades of combined experience</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-member animate-on-scroll scale-in" style="transition-delay: 0.1s">
+          <div class="team-member-image">
+            <div class="team-member-glow"></div>
+            <div class="team-member-photo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+            </div>
+            <div class="team-member-role-badge">Owner</div>
+          </div>
+          <div class="team-member-name">Usman Khan</div>
+          <div class="team-member-role">Master Barber</div>
+          <div class="team-member-details">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+              Fades • 15 years
+            </span>
+          </div>
+        </div>
+
+        <div class="team-member animate-on-scroll scale-in" style="transition-delay: 0.2s">
+          <div class="team-member-image">
+            <div class="team-member-glow"></div>
+            <div class="team-member-photo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+            </div>
+            <div class="team-member-role-badge">Senior</div>
+          </div>
+          <div class="team-member-name">Salman Aftab</div>
+          <div class="team-member-role">Senior Stylist</div>
+          <div class="team-member-details">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+              Beard Art • 12 years
+            </span>
+          </div>
+        </div>
+
+        <div class="team-member animate-on-scroll scale-in" style="transition-delay: 0.3s">
+          <div class="team-member-image">
+            <div class="team-member-glow"></div>
+            <div class="team-member-photo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+            </div>
+            <div class="team-member-role-badge">Hair</div>
+          </div>
+          <div class="team-member-name">Farhan Ayub</div>
+          <div class="team-member-role">Hair Artist</div>
+          <div class="team-member-details">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+              Modern Cuts • 8 years
+            </span>
+          </div>
+        </div>
+
+        <div class="team-member animate-on-scroll scale-in" style="transition-delay: 0.4s">
+          <div class="team-member-image">
+            <div class="team-member-glow"></div>
+            <div class="team-member-photo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+            </div>
+            <div class="team-member-role-badge">Beard</div>
+          </div>
+          <div class="team-member-name">Bilal Hassan</div>
+          <div class="team-member-role">Beard Specialist</div>
+          <div class="team-member-details">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+              Classic Styles • 10 years
+            </span>
+          </div>
+        </div>
+
+        <div class="team-member animate-on-scroll scale-in" style="transition-delay: 0.5s">
+          <div class="team-member-image">
+            <div class="team-member-glow"></div>
+            <div class="team-member-photo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+            </div>
+            <div class="team-member-role-badge">Expert</div>
+          </div>
+          <div class="team-member-name">Rizwan Ahmed</div>
+          <div class="team-member-role">Grooming Expert</div>
+          <div class="team-member-details">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+              Treatment • 6 years
+            </span>
+          </div>
+        </div>
+
+        <div class="team-member animate-on-scroll scale-in" style="transition-delay: 0.6s">
+          <div class="team-member-image">
+            <div class="team-member-glow"></div>
+            <div class="team-member-photo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+            </div>
+            <div class="team-member-role-badge">Junior</div>
+          </div>
+          <div class="team-member-name">Kamran Shah</div>
+          <div class="team-member-role">Junior Stylist</div>
+          <div class="team-member-details">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+              Kids Cuts • 3 years
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE SECTION -->
+  <section class="why-choose">
+    <div class="container">
+      <div class="why-choose-header animate-on-scroll fade-up">
+        <div class="section-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          Why Choose Us
+        </div>
+        <h2 class="section-title">The <span class="gold-gradient">Perfect Hair</span> Difference</h2>
+        <p class="section-subtitle">Here's why thousands of customers trust us with their grooming needs</p>
+      </div>
+
+      <div class="why-choose-grid">
+        <div class="why-card premium-card animate-on-scroll rotate-in" style="transition-delay: 0.1s">
+          <div class="why-card-corner-tl"></div>
+          <div class="why-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <h3>Expert Barbers</h3>
+          <p>Trained professionals with decades of combined experience.</p>
+          <div class="why-card-corner-br"></div>
+        </div>
+
+        <div class="why-card premium-card animate-on-scroll rotate-in" style="transition-delay: 0.2s">
+          <div class="why-card-corner-tl"></div>
+          <div class="why-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+          </div>
+          <h3>100% Hygienic</h3>
+          <p>Sterilized equipment and sanitized environment always.</p>
+          <div class="why-card-corner-br"></div>
+        </div>
+
+        <div class="why-card premium-card animate-on-scroll rotate-in" style="transition-delay: 0.3s">
+          <div class="why-card-corner-tl"></div>
+          <div class="why-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>
+          </div>
+          <h3>Affordable Prices</h3>
+          <p>Premium quality grooming that fits your budget.</p>
+          <div class="why-card-corner-br"></div>
+        </div>
+
+        <div class="why-card premium-card animate-on-scroll rotate-in" style="transition-delay: 0.4s">
+          <div class="why-card-corner-tl"></div>
+          <div class="why-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Flexible Hours</h3>
+          <p>Open 7 days a week, 10AM to 10PM for your convenience.</p>
+          <div class="why-card-corner-br"></div>
+        </div>
+
+        <div class="why-card premium-card animate-on-scroll rotate-in" style="transition-delay: 0.5s">
+          <div class="why-card-corner-tl"></div>
+          <div class="why-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+          </div>
+          <h3>Premium Products</h3>
+          <p>Only the best brands for your hair and skin.</p>
+          <div class="why-card-corner-br"></div>
+        </div>
+
+        <div class="why-card premium-card animate-on-scroll rotate-in" style="transition-delay: 0.6s">
+          <div class="why-card-corner-tl"></div>
+          <div class="why-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
+          <h3>Customer First</h3>
+          <p>Your satisfaction is our top priority, always.</p>
+          <div class="why-card-corner-br"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS SECTION -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="reviews-header animate-on-scroll fade-up">
+        <div class="section-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Customer Reviews
+        </div>
+        <h2 class="section-title">What Our <span class="gold-gradient">Clients Say</span></h2>
+        <p class="section-subtitle">Join thousands of satisfied customers who trust us with their grooming</p>
+      </div>
+
+      <div class="reviews-carousel animate-on-scroll scale-in">
+        <div class="review-card premium-card" id="reviewCard">
+          <div class="review-quote">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+          </div>
+          <div class="review-stars">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="review-text" id="reviewText">"Best salon in Gulshan! Usman bhai and team are incredibly skilled. My go-to place for haircuts."</p>
+          <div class="review-author" id="reviewAuthor">Ahmed Raza</div>
+          <div class="review-date" id="reviewDate">2 weeks ago</div>
+        </div>
+
+        <div class="reviews-nav">
+          <button class="reviews-nav-btn" id="prevReview">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="reviews-dots" id="reviewDots">
+            <button class="reviews-dot active" data-index="0"></button>
+            <button class="reviews-dot" data-index="1"></button>
+            <button class="reviews-dot" data-index="2"></button>
+            <button class="reviews-dot" data-index="3"></button>
+            <button class="reviews-dot" data-index="4"></button>
+          </div>
+          <button class="reviews-nav-btn" id="nextReview">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="reviews-google animate-on-scroll fade-up">
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
+          <div class="reviews-google-stars">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <span class="reviews-google-text">4.9 Rating • <span>55+ Reviews on Google</span></span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING SECTION -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <div class="booking-header animate-on-scroll fade-up">
+        <div class="section-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+          Book Appointment
+        </div>
+        <h2 class="section-title">Schedule Your <span class="gold-gradient">Visit</span></h2>
+        <p class="section-subtitle">Book your appointment in seconds via WhatsApp or give us a call</p>
+      </div>
+
+      <div class="booking-wrapper animate-on-scroll fade-up">
+        <div class="booking-progress">
+          <div class="booking-step active" id="step1Indicator">1</div>
+          <div class="booking-line" id="line1"></div>
+          <div class="booking-step" id="step2Indicator">2</div>
+          <div class="booking-line" id="line2"></div>
+          <div class="booking-step" id="step3Indicator">3</div>
+        </div>
+
+        <div class="booking-card premium-card">
+          <!-- Step 1 -->
+          <div class="booking-step-content active" id="bookingStep1">
+            <h3 class="booking-step-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+              Select Your Service
+            </h3>
+            <div class="booking-options" id="serviceOptions">
+              <button class="booking-option" data-service="Haircut & Styling">Haircut & Styling</button>
+              <button class="booking-option" data-service="Beard Grooming">Beard Grooming</button>
+              <button class="booking-option" data-service="Hair Coloring">Hair Coloring</button>
+              <button class="booking-option" data-service="Hair Treatment">Hair Treatment</button>
+              <button class="booking-option" data-service="Facial & Cleanup">Facial & Cleanup</button>
+              <button class="booking-option" data-service="Full Package">Full Package</button>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="booking-step-content" id="bookingStep2">
+            <h3 class="booking-step-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Choose Preferred Time
+            </h3>
+            <div class="booking-time-options" id="timeOptions">
+              <button class="booking-time" data-time="10:00 AM">10:00 AM</button>
+              <button class="booking-time" data-time="11:00 AM">11:00 AM</button>
+              <button class="booking-time" data-time="12:00 PM">12:00 PM</button>
+              <button class="booking-time" data-time="2:00 PM">2:00 PM</button>
+              <button class="booking-time" data-time="3:00 PM">3:00 PM</button>
+              <button class="booking-time" data-time="4:00 PM">4:00 PM</button>
+              <button class="booking-time" data-time="5:00 PM">5:00 PM</button>
+              <button class="booking-time" data-time="6:00 PM">6:00 PM</button>
+              <button class="booking-time" data-time="7:00 PM">7:00 PM</button>
+              <button class="booking-time" data-time="8:00 PM">8:00 PM</button>
+              <button class="booking-time" data-time="9:00 PM">9:00 PM</button>
+            </div>
+            <button class="booking-back" id="backToStep1">← Back</button>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="booking-step-content" id="bookingStep3">
+            <h3 class="booking-step-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Confirm Your Booking
+            </h3>
+            <div class="booking-summary">
+              <div class="booking-summary-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+                <div>
+                  <div class="booking-summary-label">Service</div>
+                  <div class="booking-summary-value" id="selectedServiceDisplay">-</div>
+                </div>
+              </div>
+              <div class="booking-summary-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div>
+                  <div class="booking-summary-label">Time</div>
+                  <div class="booking-summary-value" id="selectedTimeDisplay">-</div>
+                </div>
+              </div>
+            </div>
+            <div class="booking-actions">
+              <a href="#" id="whatsappBookingLink" target="_blank" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                Confirm via WhatsApp
+              </a>
+              <a href="tel:+923252530524" class="btn btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Call to Confirm
+              </a>
+            </div>
+            <button class="booking-back" id="backToStep2">← Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-header animate-on-scroll fade-up">
+        <div class="section-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Get In Touch
+        </div>
+        <h2 class="section-title">Visit <span class="gold-gradient">Our Salon</span></h2>
+        <p class="section-subtitle">We're conveniently located in Gulshan-e-Iqbal. Walk-ins welcome!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-cards">
+          <div class="contact-card premium-card animate-on-scroll fade-left" style="transition-delay: 0.1s">
+            <div class="contact-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h3>Location</h3>
+              <p>Shop #15, Block 10-A<br>Gulshan-e-Iqbal, Karachi</p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Get Directions →</a>
+            </div>
+          </div>
+
+          <div class="contact-card premium-card animate-on-scroll fade-left" style="transition-delay: 0.2s">
+            <div class="contact-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h3>Phone</h3>
+              <p>+92 325 253 0524</p>
+              <a href="tel:+923252530524">Call Now →</a>
+            </div>
+          </div>
+
+          <div class="contact-card premium-card animate-on-scroll fade-left" style="transition-delay: 0.3s">
+            <div class="contact-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h3>Working Hours</h3>
+              <p>Monday - Sunday<br>10:00 AM - 10:00 PM</p>
+            </div>
+          </div>
+
+          <div class="contact-social premium-card animate-on-scroll fade-left" style="transition-delay: 0.4s">
+            <h3>Follow Us</h3>
+            <div class="contact-social-links">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contact-social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="contact-social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="https://wa.me/923252530524" target="_blank" rel="noopener noreferrer" class="contact-social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-map animate-on-scroll scale-in">
+          <div class="contact-map-frame premium-card">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.7!2d67.0806!3d24.9147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzUzLjAiTiA2N8KwMDQnNTAuMiJF!5e0!3m2!1sen!2s!4v1234567890"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contact-map-cta">
+            <a href="https://wa.me/923252530524" target="_blank" rel="noopener noreferrer" class="btn btn-primary pulse-glow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              Book Your Appointment Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="logo">
+              <div class="logo-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+              </div>
+              <div class="logo-text">
+                <h1>Perfect Hair</h1>
+                <p>Salon</p>
+              </div>
+            </a>
+            <p>Where style meets precision. Karachi's most trusted barbershop since 2014.</p>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Services</h4>
+            <ul class="footer-links">
+              <li>Haircut & Styling</li>
+              <li>Beard Grooming</li>
+              <li>Hair Coloring</li>
+              <li>Hair Treatment</li>
+              <li>Facial & Cleanup</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Contact</h4>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Shop #15, Block 10-A<br>Gulshan-e-Iqbal, Karachi</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+923252530524">+92 325 253 0524</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Mon - Sun: 10AM - 10PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2024 Perfect Hair Salon. All rights reserved.</p>
+        <div class="footer-bottom-right">
+          Made with 
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          in Karachi
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ========== NAVBAR SCROLL EFFECT ==========
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // ========== MOBILE MENU ==========
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+    const closeIcon = document.getElementById('closeIcon');
+
+    mobileToggle.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('active');
+      menuIcon.style.display = isOpen ? 'none' : 'block';
+      closeIcon.style.display = isOpen ? 'block' : 'none';
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        menuIcon.style.display = 'block';
+        closeIcon.style.display = 'none';
+      });
+    });
+
+    // ========== SCROLL ANIMATIONS ==========
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+
+    // ========== REVIEWS CAROUSEL ==========
+    const reviews = [
+      { text: "Best salon in Gulshan! Usman bhai and team are incredibly skilled. My go-to place for haircuts.", author: "Ahmed Raza", date: "2 weeks ago" },
+      { text: "Amazing experience! Clean environment, friendly staff, and perfect haircut every time.", author: "Fahad Ali", date: "1 month ago" },
+      { text: "The beard grooming here is top-notch. Highly recommend for anyone looking for quality service.", author: "Hamza Sheikh", date: "3 weeks ago" },
+      { text: "Affordable prices with premium quality. Been coming here for 5 years and never disappointed.", author: "Imran Malik", date: "1 week ago" },
+      { text: "Finally found a salon that understands what I want. The team is professional and friendly.", author: "Zain Abbas", date: "2 months ago" }
+    ];
+
+    let currentReview = 0;
+    const reviewText = document.getElementById('reviewText');
+    const reviewAuthor = document.getElementById('reviewAuthor');
+    const reviewDate = document.getElementById('reviewDate');
+    const reviewDots = document.querySelectorAll('.reviews-dot');
+
+    function updateReview() {
+      const review = reviews[currentReview];
+      reviewText.textContent = `"${review.text}"`;
+      reviewAuthor.textContent = review.author;
+      reviewDate.textContent = review.date;
+      
+      reviewDots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentReview);
+      });
+    }
+
+    document.getElementById('nextReview').addEventListener('click', () => {
+      currentReview = (currentReview + 1) % reviews.length;
+      updateReview();
+    });
+
+    document.getElementById('prevReview').addEventListener('click', () => {
+      currentReview = (currentReview - 1 + reviews.length) % reviews.length;
+      updateReview();
+    });
+
+    reviewDots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        currentReview = parseInt(dot.dataset.index);
+        updateReview();
+      });
+    });
+
+    // Auto-rotate reviews
+    setInterval(() => {
+      currentReview = (currentReview + 1) % reviews.length;
+      updateReview();
+    }, 5000);
+
+    // ========== BOOKING WIZARD ==========
+    let selectedService = '';
+    let selectedTime = '';
+    let currentStep = 1;
+
+    const step1Content = document.getElementById('bookingStep1');
+    const step2Content = document.getElementById('bookingStep2');
+    const step3Content = document.getElementById('bookingStep3');
+    const step1Indicator = document.getElementById('step1Indicator');
+    const step2Indicator = document.getElementById('step2Indicator');
+    const step3Indicator = document.getElementById('step3Indicator');
+    const line1 = document.getElementById('line1');
+    const line2 = document.getElementById('line2');
+
+    function updateBookingStep(step) {
+      currentStep = step;
+      
+      // Update content visibility
+      step1Content.classList.toggle('active', step === 1);
+      step2Content.classList.toggle('active', step === 2);
+      step3Content.classList.toggle('active', step === 3);
+      
+      // Update indicators
+      step1Indicator.classList.toggle('active', step === 1);
+      step1Indicator.classList.toggle('completed', step > 1);
+      step2Indicator.classList.toggle('active', step === 2);
+      step2Indicator.classList.toggle('completed', step > 2);
+      step3Indicator.classList.toggle('active', step === 3);
+      
+      // Update lines
+      line1.classList.toggle('active', step > 1);
+      line2.classList.toggle('active', step > 2);
+      
+      // Update check icons
+      if (step > 1) step1Indicator.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+      else step1Indicator.textContent = '1';
+      
+      if (step > 2) step2Indicator.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+      else step2Indicator.textContent = '2';
+    }
+
+    // Service selection
+    document.querySelectorAll('.booking-option').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.booking-option').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        selectedService = btn.dataset.service;
+        document.getElementById('selectedServiceDisplay').textContent = selectedService;
+        updateBookingStep(2);
+      });
+    });
+
+    // Time selection
+    document.querySelectorAll('.booking-time').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.booking-time').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        selectedTime = btn.dataset.time;
+        document.getElementById('selectedTimeDisplay').textContent = selectedTime;
+        
+        // Update WhatsApp link
+        const message = encodeURIComponent(`Hi! I'd like to book an appointment at Perfect Hair Salon.\n\nService: ${selectedService}\nPreferred Time: ${selectedTime}`);
+        document.getElementById('whatsappBookingLink').href = `https://wa.me/923252530524?text=${message}`;
+        
+        updateBookingStep(3);
+      });
+    });
+
+    // Back buttons
+    document.getElementById('backToStep1').addEventListener('click', () => updateBookingStep(1));
+    document.getElementById('backToStep2').addEventListener('click', () => updateBookingStep(2));
+
+    // ========== SMOOTH SCROLL ==========
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const navHeight = navbar.offsetHeight;
+          const targetPosition = target.offsetTop - navHeight;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
